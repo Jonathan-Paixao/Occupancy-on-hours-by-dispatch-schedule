@@ -36,9 +36,11 @@ https://jonathan-paixao-csicargo.atlassian.net/jira/core/projects/GDD/board?grou
   While testing how the current schdule would work with the fator, could be possible to identify that the Fator wont go too far to cases when the difficulty was very high, so it was made a new REWORK on the fator that could possiblity turn a new way to see how many hours we would waste on everything.
 
 **  -06/08/2025 - 14:17 - **
+
 About the “Visão Gerencial Peças”, it’s almost done. We just need now to set some small details and then it’s done. But, lookingo for the future, will be needed acess to ZVAE on Bigquery if it’s wanted to create different filters and vision besides this static one.
 
 **  -08/08/2025 - 16:53 - **
+
 After a shortly validation with Raphael on 07/08, he accepted the view on [Faturado] - Visão Gerencial Peças and asked to this one be put on the actual Visão Gerencial Peças. It’ll be done between 08/08 and 12/08.
 
 This is how the view looks on 08/08
