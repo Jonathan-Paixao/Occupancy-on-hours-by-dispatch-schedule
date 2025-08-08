@@ -37,3 +37,10 @@ https://jonathan-paixao-csicargo.atlassian.net/jira/core/projects/GDD/board?grou
 
 **  -06/08/2025 - 14:17 - **
 About the “Visão Gerencial Peças”, it’s almost done. We just need now to set some small details and then it’s done. But, lookingo for the future, will be needed acess to ZVAE on Bigquery if it’s wanted to create different filters and vision besides this static one.
+
+**  -08/08/2025 - 16:53 - **
+After a shortly validation with Raphael on 07/08, he accepted the view on [Faturado] - Visão Gerencial Peças and asked to this one be put on the actual Visão Gerencial Peças. It’ll be done between 08/08 and 12/08.
+
+This is how the view looks on 08/08
+
+<img width="1024" height="576" alt="image" src="https://github.com/user-attachments/assets/5ac15b81-6960-443b-b692-84cea6e4dbcf" />
