@@ -1,0 +1,8 @@
+6. O .gitignore (O que NÃO Salvar)
+Tão importante quanto o que salvar é o que não salvar. Crie este arquivo na raiz do projeto para dizer ao Git para ignorar:
+
+Credenciais: Arquivos de chave de serviço do Google (*.json), senhas, tokens.
+
+Arquivos de Ambiente: Arquivos específicos da sua máquina.
+
+Dados Brutos: Nunca suba arquivos .csv ou .xlsx grandes. O Git não foi feito para isso. Aponte para a fonte original deles na sua documentação.
