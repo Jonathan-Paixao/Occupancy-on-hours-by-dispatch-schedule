@@ -16,4 +16,4 @@ Esta pasta contém uma lista curada de links externos úteis para o contexto e d
 
 * **Kimball vs. Inmon**
     * Link: `https://www.kimballgroup.com/2002/12/kimball-versus-inmon/`
-    * Descrição: Artigo de referência que embasou a decisão de modelagem dimensional (estrela) utilizada neste projeto.
+    * Descrição: Artigo de referência que embasou a decisão de modelagem dimensional (estrela) utilizada neste projeto..

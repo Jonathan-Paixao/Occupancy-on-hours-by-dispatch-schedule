@@ -12,13 +12,13 @@ WITH base_dados_unificada AS (
         *,
         CONCAT(CAST(NUMERO_ORDEM AS STRING), REGEXP_REPLACE(Material, r'^0+', '')) AS Ordem_Material_Concat
       FROM
-        `whr-lar-gtm-cx-data-lake.views_pecas_adm_pivo.tb_mcte`
+        ``
       WHERE
         Carteira NOT IN ('Distribuidores ME', 'Supply', 'Distributor')
         AND TIPO_OV = 'FG'
         AND EXTRACT(YEAR FROM Data_de_Criacao) = EXTRACT(YEAR FROM CURRENT_DATE())
     ) AS mcte
-    LEFT JOIN `whr-lar-logistica-data-lake.bus_visao_gerencial_pecas.tb_tat_logistica` AS ns 
+    LEFT JOIN `` AS ns 
     ON mcte.Ordem_Material_Concat = ns.ORDEM_MATERIAL
 ),
 -- CTE 1: Agrega os valores de Input e Faturamento (LÓGICA INTACTA)
@@ -58,7 +58,7 @@ todas_as_datas AS (
   SELECT DISTINCT
     Data AS data
   FROM
-    `whr-lar-logistica-data-lake.work_visao_gerencial_pecas.ext_meta_faturamento_diarizada`
+    ``
   WHERE Data IS NOT NULL
     AND EXTRACT(YEAR FROM Data) = EXTRACT(YEAR FROM CURRENT_DATE()) -- Filtro opcional para performance
 )
@@ -82,7 +82,7 @@ FROM
   LEFT JOIN input_faturamento_agg AS i_f ON d.data = i_f.data_agg
   LEFT JOIN remessa_agg AS r ON d.data = r.data_agg
   LEFT JOIN transporte_agg AS t ON d.data = t.data_agg
-  LEFT JOIN `whr-lar-logistica-data-lake.work_visao_gerencial_pecas.ext_meta_faturamento_diarizada` AS metas ON d.data = metas.Data
+  LEFT JOIN `` AS metas ON d.data = metas.Data
 WHERE
   d.data IS NOT NULL -- Remove linhas onde a data possa ser nula
 ORDER BY
